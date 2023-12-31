@@ -1,17 +1,16 @@
-/* FullPostPage.css */
 
 .full-post-page {
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    background-color: #f0f0f0; /* Set the background color for the rest of the page */
+    background-color: #f0f0f0; 
   }
   
   .full-post-content {
     max-width: 800px;
     width: 100%;
     padding: 20px;
-    background-color: #fff; /* Set the background color for the post content */
+    background-color: #fff; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
   

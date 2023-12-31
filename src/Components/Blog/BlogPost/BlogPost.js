@@ -44,9 +44,8 @@ const BlogPost = ({htmlContent}) => {
         <div className='full-post-page'>
         {postContent ? (
         <div className="full-post-content">
-          <h2>{cardsData[0].title}</h2>
-          <p>{postContent.content}</p>
-          <p dangerouslySetInnerHTML={{ __html: postContent?.content }} />
+          <h1>{cardsData[0].title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: postContent?.content }} />
           <p>
             <strong>Author:</strong> {cardsData[0].author} | <strong>Date:</strong> {cardsData[0].date}
           </p>
