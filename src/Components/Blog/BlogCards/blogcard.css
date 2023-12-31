@@ -1,0 +1,47 @@
+/* BlogPage.css */
+
+.blog-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .blog-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.33% - 20px); /* Adjust for responsive design */
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    @media (max-width: 960px) {
+      width: calc(50% - 20px); /* Adjust for responsive design */
+    }
+  }
+  
+  .selected-post {
+    margin-top: 20px;
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      line-height: 1.6;
+    }
+  }
+  
+  /* Add any additional styling based on your design preferences */
+  

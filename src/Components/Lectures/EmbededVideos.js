@@ -7,7 +7,8 @@ const EmbededVideos = () => {
         src="https://www.youtube.com/embed/r0_NMYYsaCs?si=Al9Qx3ChPFgsVdye?&autoplay=1&mute=1" 
         title="YouTube video player" 
         frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        allow="accelerometer; 
+        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
         </iframe>
     </div>
   )

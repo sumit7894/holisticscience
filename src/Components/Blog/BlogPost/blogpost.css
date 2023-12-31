@@ -1,0 +1,39 @@
+/* FullPostPage.css */
+
+.full-post-page {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Set the background color for the rest of the page */
+  }
+  
+  .full-post-content {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff; /* Set the background color for the post content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+  
+    strong {
+      font-weight: bold;
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 960px) {
+    .full-post-content {
+      padding: 15px;
+    }
+  }
+  
