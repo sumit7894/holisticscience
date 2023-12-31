@@ -1,0 +1,31 @@
+/* LecturePage.css */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Lecture Container Styles */
+  .lecture-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Lecture Grid Styles */
+  .lecture-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  /* Responsive Styles - Breakpoint at 960px */
+  @media (max-width: 960px) {
+    .lecture-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
