@@ -4,7 +4,7 @@ import './embededvideos.css'
 const EmbededVideos = () => {
   return (
     <div className="lecture-container">
-      <h1>Trending YouTube Lectures</h1>
+      <h1>Top YouTube Lectures</h1>
       <div className="lecture-grid">
         {/* YouTube Embeds */}
         <div className="lecture-item">
