@@ -14,7 +14,6 @@ const BlogPost = ({htmlContent}) => {
         getDoc(docRef).then((doc) => {
         if (doc.exists) {
           const data = doc.data();
-          console.log("Document data:", doc.data());
           setPostContent(data);
         } else {
           console.log("No such document!");
@@ -32,7 +31,6 @@ const BlogPost = ({htmlContent}) => {
         const filteredData = cards.filter((card)=>card.id === `${postId}`);
         setCardsData(filteredData);
       }
-      console.log("here is card data",cardsData)
     useEffect(()=>{
         getData();
         getContent();

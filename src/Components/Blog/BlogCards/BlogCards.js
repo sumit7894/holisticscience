@@ -16,8 +16,6 @@ const BlogCards = () => {
     setBlogPosts(cards);
   }
 
-  console.log("yup all cards data",blogPosts);
-
   useEffect(()=>{
     getData();
   },[]);
