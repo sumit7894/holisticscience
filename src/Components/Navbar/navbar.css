@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     max-width: 1500px;
     position: relative;
@@ -23,7 +23,7 @@
   .nav-logo {
     color: #f5b921;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 50px;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
@@ -99,25 +99,28 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      border-top: 1pxsolid #fff;
+      border-top: 1px solid #fff; /* Corrected typo here */
       position: absolute;
-      top: 80px;
+      top: 70px;
       left: -110%;
-      opacity: 1;
+      opacity: 0; /* Changed from 1 to 0 to hide initially */
       transition: all 0.5s ease;
+      gap: 2rem;
     }
   
     .nav-menu.active {
       background: #1f5156;
-      left: 0px;
+      left: 0;
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 1;
     }
+  
     .nav-item .active {
       color: #ffdd40;
       border: none;
     }
+  
     .nav-links {
       padding: 1.5rem;
       width: 100%;
@@ -133,7 +136,7 @@
       display: block;
       position: absolute;
       top: 50%;
-      right: 0;
+      left: 40px;
       transform: translate(-100%, -50%);
       width: 2rem;
       height: 2rem;

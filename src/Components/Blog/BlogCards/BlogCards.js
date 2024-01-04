@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import {db} from '../../../firebase-config'
-import { collection,  doc,  getDoc,  getDocs } from 'firebase/firestore'
+import { collection,   getDocs } from 'firebase/firestore'
 import './blogcard.css'
 import { useNavigate } from 'react-router-dom';
 const BlogCards = () => {
-  const contentElement = document.getElementById("content-display");
   const navigate = useNavigate();
   const [blogPosts, setBlogPosts] = useState([]); 
   const [selectedPost, setSelectedPost] = useState(null); // State for the selected blog post
@@ -17,6 +16,7 @@ const BlogCards = () => {
   }
 
   useEffect(()=>{
+    // eslint-disable-next-line
     getData();
   },[]);
 
