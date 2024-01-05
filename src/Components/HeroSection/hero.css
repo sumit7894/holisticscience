@@ -47,4 +47,31 @@
       margin-bottom: 20px;
     }
   }
+  .featured-blogs {
+    margin-top: 20px; /* Adjust spacing as needed */
+  }
   
+  .featured-blogs h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .featured-blogs ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .featured-blogs li {
+    margin-bottom: 10px; /* Adjust spacing between links */
+  }
+  
+  .featured-blogs a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .featured-blogs a:hover {
+    color: #0056b3; /* Hover color */
+  }

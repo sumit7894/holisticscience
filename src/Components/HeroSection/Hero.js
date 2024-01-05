@@ -2,6 +2,9 @@ import React from 'react'
 import './hero.css'
 import LOGO from '../../Utils/icons/logo.png'
 const Hero = () => {
+  const importantBlogs = [
+    { title: 'Syllabus for written examination for PGT (Biology)', link: 'https://www.holistic-science.org/blogs/4' },
+  ];
   return (
     <div className="home-page">
       <div className="hero-section">
@@ -15,6 +18,16 @@ const Hero = () => {
             through our unique teaching methods.
           </p>
         </div>
+      </div>
+      <div className='featured-blogs'>
+        <h2>Featured Blogs</h2>
+        <ul>
+          {importantBlogs.map((blog, index) => (
+            <li key={index}>
+              <a href={blog.link}>{blog.title}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   )
