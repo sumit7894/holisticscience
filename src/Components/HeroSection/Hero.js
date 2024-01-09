@@ -3,7 +3,18 @@ import './hero.css'
 import LOGO from '../../Utils/icons/logo.png'
 const Hero = () => {
   const importantBlogs = [
-    { title: 'Syllabus for written examination for PGT (Biology)', link: 'https://www.holistic-science.org/blogs/4' },
+    {
+    title: 
+    'Syllabus for written examination for PGT (Biology)',
+    link:
+    'https://www.holistic-science.org/blogs/4'
+    },
+    {
+      title:
+      'Syllabus for written examination for PGT(CHEMISTRY)',
+      link:
+      'https://www.holistic-science.org/blogs/5'
+    }
   ];
   return (
     <div className="home-page">
