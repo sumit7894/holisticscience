@@ -8,13 +8,13 @@ import {getFirestore} from "firebase/firestore"
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDbXi8AYe75kSQ94-zywxkhZZoWT7ztVC4",
-  authDomain: "holisticscience-955a2.firebaseapp.com",
-  projectId: "holisticscience-955a2",
-  storageBucket: "holisticscience-955a2.appspot.com",
-  messagingSenderId: "213130334303",
-  appId: "1:213130334303:web:9a0cf7aae7345584454bea",
-  measurementId: "G-SQG17GGFRW"
+  apiKey: "AIzaSyADTX7m8-aFA0lgftmTteL9mAlZ_fUgISQ",
+  authDomain: "holistic-science.firebaseapp.com",
+  projectId: "holistic-science",
+  storageBucket: "holistic-science.appspot.com",
+  messagingSenderId: "249823038146",
+  appId: "1:249823038146:web:fb5a1200b865d42a70095b",
+  measurementId: "G-X77TJWCEP9"
 };
 
 // Initialize Firebase
