@@ -14,6 +14,12 @@ const Hero = () => {
       'Syllabus for written examination for PGT(CHEMISTRY)',
       link:
       'https://www.holistic-science.org/blogs/5'
+    },
+    {
+      title:
+      'Most Important Reactions Name of Class 12th',
+      link:
+      'https://www.holistic-science.org/blogs/6'
     }
   ];
   return (

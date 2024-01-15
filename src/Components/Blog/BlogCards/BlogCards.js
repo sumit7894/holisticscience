@@ -6,15 +6,15 @@ import { useNavigate } from 'react-router-dom';
 const BlogCards = () => {
   const navigate = useNavigate();
   const [blogPosts, setBlogPosts] = useState([]); 
-  const [selectedPost, setSelectedPost] = useState(null); // State for the selected blog post
-
+  const [selectedPost, setSelectedPost] = useState(null); 
+  // State for the selected blog post
   const getData = async()=>{
     const valCardRef= collection(db,"post");
     const dataCardDb = await getDocs(valCardRef);
     const cards = dataCardDb.docs.map(val=>({...val.data(),id:val.id}));
     setBlogPosts(cards);
+    console.log("here is blogpost",cards);
   }
-
   useEffect(()=>{
     // eslint-disable-next-line
     getData();
@@ -40,7 +40,13 @@ const BlogCards = () => {
             <p>
               <strong>Author:</strong> {post.author} | <strong>Date:</strong> {post.date}
             </p>
-            <button onClick={() => handleReadMore(post.id)}>Read More</button>
+            <button 
+            className='read-more-btn'
+            onClick=
+            {() => 
+            handleReadMore(post.id)}>
+            Read More
+            </button>
           </div>
         ))}
       </div>
