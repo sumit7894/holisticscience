@@ -6,7 +6,7 @@ const Testimonial = () => {
   return (
     <div className="testimonials-section">
     <div className="testimonial">
-      <img src={FIRST__OWNER__IMG} className='owner-pic' alt='owner-1'/>
+      {/* <img src={FIRST__OWNER__IMG} className='owner-pic' alt='owner-1'/> */}
       <div className="testimonial-content">
         <h2>Kumar Saurabh Pal</h2>
         <p>
@@ -18,7 +18,7 @@ const Testimonial = () => {
     </div>
 
     <div className="testimonial">
-      <img src={SECOND__OWNER__IMG} className='owner-pic' alt='owner-2'/>
+      {/* <img src={SECOND__OWNER__IMG} className='owner-pic' alt='owner-2'/> */}
       <div className="testimonial-content">
         <h2>Kumar Sambhav Pal</h2>
         <p>
